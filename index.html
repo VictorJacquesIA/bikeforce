@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bike Force Floripa — Oficina Especializada em Ciclismo de Alto Desempenho</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Bike Force Floripa — Oficina especializada e revendedor autorizado Look, ENVE e OGGI em Florianópolis. Revisão, bike fit, upgrades e montagem premium. Entregamos para todo o Brasil." />
+  <meta name="keywords" content="oficina bike florianopolis, bike fit floripa, revisão bicicleta florianopolis, look enve oggi floripa, upgrade bike speed" />
+  <link rel="canonical" href="https://bikeforce.com.br" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Bike Force Floripa — Oficina Premium de Ciclismo" />
+  <meta property="og:description" content="Revendedor autorizado Look, ENVE e OGGI. Oficina especializada em Florianópolis. Entregamos para todo o Brasil." />
+  <meta property="og:image"       content="/assets/og-image.jpg" />
+  <meta property="og:url"         content="https://bikeforce.com.br" />
+  <meta property="og:type"        content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Bike Force Floripa — Oficina Premium" />
+  <meta name="twitter:description" content="Revendedor autorizado Look, ENVE e OGGI em Florianópolis." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,200;0,300;0,400;0,600;1,300;1,400&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/styles/variables.css" />
+  <link rel="stylesheet" href="/styles/reset.css" />
+  <link rel="stylesheet" href="/styles/utilities.css" />
+  <link rel="stylesheet" href="/styles/animations.css" />
+  <link rel="stylesheet" href="/styles/header.css" />
+  <link rel="stylesheet" href="/styles/hero.css" />
+  <link rel="stylesheet" href="/styles/sections.css" />
+  <link rel="stylesheet" href="/styles/footer.css" />
+  <link rel="stylesheet" href="/styles/responsive.css" />
+</head>
+
+<body>
+
+  <!-- Custom cursor -->
+  <div id="cursor-dot"  aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ─── HEADER / NAV ─── -->
+  <header>
+    <nav id="main-nav" role="navigation" aria-label="Navegação principal">
+      <div class="nav-logo">
+        <img src="./assets/logo/logo.png" alt="Bike Force" class="nav-logo-img" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#brands">Marcas</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#cta-final">Contato</a></li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Fullscreen menu overlay -->
+  <div class="nav-fullscreen" id="nav-fullscreen" aria-hidden="true">
+    <nav class="fs-nav" aria-label="Menu principal">
+      <a href="#services" class="fs-link">Serviços</a>
+      <a href="#brands"   class="fs-link">Marcas</a>
+      <a href="#about"    class="fs-link">Sobre</a>
+      <a href="#cta-final" class="fs-link">Contato</a>
+      <a href="https://wa.me/554830288810" target="_blank" rel="noopener noreferrer" class="fs-cta">
+        Agendar revisão
+      </a>
+    </nav>
+  </div>
+
+  <!-- ─── MAIN ─── -->
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" aria-label="Hero Bike Force">
+      <div class="hero-bg-lines" aria-hidden="true"></div>
+      <div class="hero-bg-glow"  aria-hidden="true"></div>
+      <div class="hero-grain"    aria-hidden="true"></div>
+
+      <!-- PERFORMANCE — atrás da bike -->
+      <div class="hero-bg-headline" id="hero-bg-headline" aria-hidden="true">PERFORMANCE</div>
+
+      <!-- SEM LIMITES. — na frente da bike -->
+      <h1 class="hero-title-front" id="hero-title-front" aria-label="Performance sem limites">SEM LIMITES.</h1>
+
+
+      <!-- Bike — foreground, centered, in front of background text -->
+      <div class="hero-bike-center" id="hero-bike-center">
+        <div class="bike-wrap" id="bike-wrap">
+          <img
+            src="./assets/imagens/hero.png"
+            alt="Look 795 Blade RS — Bike Force Floripa"
+            class="bike-img"
+            width="860"
+            height="640"
+            loading="eager"
+          />
+          <div class="bike-glow" aria-hidden="true"></div>
+          <div class="spec-tag tag-1" aria-hidden="true">Carbon Frame</div>
+          <div class="spec-tag tag-2" aria-hidden="true">Di2 Ready</div>
+          <div class="spec-tag tag-3" aria-hidden="true">Disc Brake</div>
+        </div>
+      </div>
+
+      <!-- Bottom content — badges, CTAs, stats -->
+      <div class="hero-bottom">
+<div class="hero-buttons" id="hero-buttons">
+          <a href="https://wa.me/554830288810" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <span>Falar no WhatsApp</span>
+          </a>
+          <a href="#services" class="btn-secondary">
+            <span>Ver serviços</span>
+          </a>
+        </div>
+
+        <div class="hero-stats" id="hero-stats" aria-label="Números da Bike Force">
+          <div class="stat-item">
+            <div class="stat-number" data-target="16" data-prefix="+">0</div>
+            <div class="stat-label">Anos no mercado</div>
+          </div>
+<div class="stat-item">
+            <div class="stat-number" data-target="100" data-suffix="%">0</div>
+            <div class="stat-label">Especializado</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span class="ticker-item">Bike Fit Profissional<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Revisão Completa<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Upgrade de Performance<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Suspensão Hidráulica<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Freios Hidráulicos<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Montagem Personalizada<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Rodas Premium<span class="ticker-sep"></span></span>
+        <span class="ticker-item">LOOK<span class="ticker-sep"></span></span>
+        <span class="ticker-item">ENVE<span class="ticker-sep"></span></span>
+        <span class="ticker-item">OGGI<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Enviamos para Todo o Brasil<span class="ticker-sep"></span></span>
+        <!-- duplicate for seamless loop -->
+        <span class="ticker-item">Bike Fit Profissional<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Revisão Completa<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Upgrade de Performance<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Suspensão Hidráulica<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Freios Hidráulicos<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Montagem Personalizada<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Rodas Premium<span class="ticker-sep"></span></span>
+        <span class="ticker-item">LOOK<span class="ticker-sep"></span></span>
+        <span class="ticker-item">ENVE<span class="ticker-sep"></span></span>
+        <span class="ticker-item">OGGI<span class="ticker-sep"></span></span>
+        <span class="ticker-item">Enviamos para Todo o Brasil<span class="ticker-sep"></span></span>
+      </div>
+    </div>
+
+    <!-- BRANDS -->
+    <section id="brands" aria-labelledby="brands-heading">
+      <div class="section-inner">
+        <div class="brands-header reveal">
+          <span class="section-label">Revendedor Autorizado</span>
+          <h2 class="section-title" id="brands-heading">
+            AS MELHORES <br><span class="title-outline">MARCAS.</span>
+          </h2>
+          <p class="brands-subtitle">Revendedor oficial com garantia de origem, estoque real e suporte técnico especializado.</p>
+        </div>
+        <div class="brands-grid">
+          <article class="brand-card reveal">
+            <div class="brand-name">LOOK</div>
+            <p class="brand-tagline">Pioneira no clipless pedal. Carbono de competição desde 1984. Tecnologia francesa usada nas maiores provas do mundo.</p>
+            <span class="brand-badge">Revendedor Autorizado</span>
+          </article>
+          <article class="brand-card reveal">
+            <div class="brand-name">ENVE</div>
+            <p class="brand-tagline">Rodas e componentes full carbon para quem não aceita segundo lugar. Engenharia americana no topo do pelotão.</p>
+            <span class="brand-badge">Revendedor Autorizado</span>
+          </article>
+          <article class="brand-card reveal">
+            <div class="brand-name">OGGI</div>
+            <p class="brand-tagline">A bike brasileira de alta performance, do XC ao Gravel. Tecnologia nacional com acabamento de campeonato.</p>
+            <span class="brand-badge">Revendedor Autorizado</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" aria-labelledby="products-heading">
+      <div class="section-inner">
+        <div class="products-header reveal">
+          <span class="section-label">Em Destaque</span>
+          <h2 class="section-title" id="products-heading">PRODUTOS <span class="title-outline">/ EXCLUSIVOS</span></h2>
+        </div>
+
+        <div class="carousel" id="products-carousel">
+          <!-- Slide 1 -->
+          <div class="carousel-slide active" data-index="0">
+            <h3 class="slide-title">Frameset Look<br>765 Gravel RS</h3>
+            <div class="slide-image">
+              <img src="./assets/imagens/p1.png" alt="Frameset Look 765 Gravel RS" />
+            </div>
+            <p class="slide-desc">Um frameset pensado para quem busca velocidade no asfalto sem limitar a aventura no gravel.</p>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-slide" data-index="1">
+            <h3 class="slide-title">Rodas Zipp<br>303 Firecrest</h3>
+            <div class="slide-image">
+              <img src="./assets/imagens/p2.png" alt="Rodas Zipp 303 Firecrest" />
+            </div>
+            <p class="slide-desc">Perfil 40mm · Construção em carbono · Aerodinâmica refinada para máxima performance</p>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-slide" data-index="2">
+            <h3 class="slide-title">Frameset Melee</h3>
+            <div class="slide-image">
+              <img src="./assets/imagens/p3.png" alt="Frameset Melee" />
+            </div>
+            <p class="slide-desc">Otimização aerodinâmica</p>
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-slide" data-index="3">
+            <h3 class="slide-title">Rodas Ahead<br>Composites Biturbo</h3>
+            <div class="slide-image">
+              <img src="./assets/imagens/p4.png" alt="Rodas Ahead Composites Biturbo Road" />
+            </div>
+            <p class="slide-desc">Construção em carbono de alta qualidade · Perfil aerodinâmico para altas velocidades · Excelente rigidez lateral</p>
+          </div>
+          <!-- Slide 5 -->
+          <div class="carousel-slide" data-index="4">
+            <h3 class="slide-title">Frameset Look<br>795 Blade RS</h3>
+            <div class="slide-image">
+              <img src="./assets/imagens/p5.png" alt="Frameset Look 795 Blade RS" />
+            </div>
+            <p class="slide-desc">Aerodinâmica de alto nível, rigidez absurda e transferência de potência direta</p>
+          </div>
+          <!-- Slide 6 -->
+          <div class="carousel-slide" data-index="5">
+            <h3 class="slide-title">Frameset Melee</h3>
+            <div class="slide-image">
+              <img src="./assets/imagens/p6.png" alt="Frameset Melee" />
+            </div>
+            <p class="slide-desc">Otimização aerodinâmica Real-World Fast</p>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <div class="carousel-arrows">
+          <button class="carousel-arrow carousel-prev" id="carousel-prev" aria-label="Anterior">&#8592;</button>
+          <button class="carousel-arrow carousel-next" id="carousel-next" aria-label="Próximo">&#8594;</button>
+        </div>
+
+        <!-- Dots -->
+        <div class="carousel-dots">
+          <button class="carousel-dot active" data-index="0" aria-label="Produto 1"></button>
+          <button class="carousel-dot" data-index="1" aria-label="Produto 2"></button>
+          <button class="carousel-dot" data-index="2" aria-label="Produto 3"></button>
+          <button class="carousel-dot" data-index="3" aria-label="Produto 4"></button>
+          <button class="carousel-dot" data-index="4" aria-label="Produto 5"></button>
+          <button class="carousel-dot" data-index="5" aria-label="Produto 6"></button>
+        </div>
+
+        <div class="products-footer reveal">
+          <a href="https://www.instagram.com/bikeforcefloripa" target="_blank" rel="noopener noreferrer" class="products-cta-link">
+            Ver mais no Instagram → @bikeforcefloripa
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="section-inner">
+        <div class="services-header reveal">
+          <span class="section-label">O que fazemos</span>
+          <h2 class="services-title" id="services-heading">SERVIÇOS <span class="title-outline">/ TÉCNICOS</span></h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-num">01</div>
+            <div class="service-name">Revisão Completa</div>
+            <p class="service-desc">Diagnóstico total da bike. Cabos, conduítes, ajustes e calibração de todos os sistemas.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-num">02</div>
+            <div class="service-name">Suspensão Hidráulica</div>
+            <p class="service-desc">Especialidade da casa. Setup e manutenção completa de garfos e amortecedores hidráulicos.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-num">03</div>
+            <div class="service-name">Freios Hidráulicos</div>
+            <p class="service-desc">Sangria, regulagem e upgrade. Precisão de parada que salva em qualquer descida.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-num">04</div>
+            <div class="service-name">Bike Fit</div>
+            <p class="service-desc">Posicionamento ideal para potência, conforto e eficiência. Resultados reais no pedal.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-num">05</div>
+            <div class="service-name">Upgrade de Performance</div>
+            <p class="service-desc">Componentes premium: grupos, rodas, cockpit. A bike que você merece, montada por quem entende.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-num">06</div>
+            <div class="service-name">Montagem Customizada</div>
+            <p class="service-desc">Sua bike do zero com quadro, grupo e rodas escolhidos por você — com nossa curadoria técnica.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-num">07</div>
+            <div class="service-name">Transmissão Eletrônica</div>
+            <p class="service-desc">Di2, AXS, EPS. Instalação, configuração e diagnóstico de grupos eletrônicos de última geração.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-num">08</div>
+            <div class="service-name">Rodas Premium</div>
+            <p class="service-desc">Truagem, tubeless e upgrade de wheelsets carbono Look, ENVE e DT Swiss. Rolamento perfeito.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-num">09</div>
+            <div class="service-name">Ajustes &amp; Peças</div>
+            <p class="service-desc">Micro ajustes rápidos + peças em estoque para road, gravel e MTB. Atendimento ágil e preciso.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section id="manifesto" aria-label="Manifesto Bike Force">
+      <div class="section-inner">
+        <div class="manifesto-watermark" aria-hidden="true">
+          <img src="./assets/logo/logo.png" alt="" class="manifesto-logo-bg" />
+        </div>
+        <p class="manifesto-text reveal">
+          SUA BIKE MERECE UMA OFICINA À ALTURA DA SUA PERFORMANCE.
+        </p>
+        <a href="https://wa.me/554830288810" target="_blank" rel="noopener noreferrer" class="manifesto-cta reveal">
+          Agendar agora →
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="section-inner">
+        <div class="about-grid">
+          <div class="about-left reveal">
+            <span class="section-label">Quem somos</span>
+            <h2 class="about-title" id="about-heading">CICLISTA<br>ATENDENDO<br>CICLISTA.</h2>
+            <p class="about-text">
+              Desde 2009 em Florianópolis, a Bike Force nasceu da paixão pelo ciclismo de alta performance. Somos revendedores autorizados Look, ENVE e OGGI — e entregamos para todo o Brasil. Nossa oficina é especializada porque nós também pedalamos. Cada diagnóstico, cada ajuste, cada escolha de componente vem de quem conhece a estrada por dentro.
+            </p>
+          </div>
+          <div class="about-right reveal">
+            <div class="about-stat">
+              <div class="about-stat-num">2009</div>
+              <div class="about-stat-label">Fundação</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">+16</div>
+              <div class="about-stat-label">Anos de expertise</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">3</div>
+              <div class="about-stat-label">Marcas autorizadas</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">BRASIL</div>
+              <div class="about-stat-label">Entrega nacional</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" aria-labelledby="testi-heading">
+      <div class="section-inner">
+        <div class="testi-header reveal">
+          <span class="section-label">Depoimentos</span>
+          <h2 class="testi-title" id="testi-heading">EXPERIÊNCIAS <span class="title-outline">/ REAIS</span></h2>
+        </div>
+        <div class="testi-grid">
+          <article class="testi-card reveal">
+            <div class="testi-stars" aria-label="5 estrelas">
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+            </div>
+            <p class="testi-quote">"Honestidade rara hoje em dia: reduziram o valor do orçamento por não ser necessário substituir peças internas durante a revisão. Preços altamente competitivos e pós-venda sem comparação. Recomendadíssimos!"</p>
+            <div class="testi-author">Rodrigo May</div>
+            <div class="testi-bike">Local Guide · 29 avaliações</div>
+          </article>
+          <article class="testi-card reveal">
+            <div class="testi-stars" aria-label="5 estrelas">
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+            </div>
+            <p class="testi-quote">"Melhor bike shop da grande Florianópolis. Sou cliente há 3 anos e mais do que um vendedor ganhamos um grande amigo. Profissional sem igual, sempre atualizado e com atendimento nota 1000. Vcs são feras!!"</p>
+            <div class="testi-author">Pâmela Barcelos</div>
+            <div class="testi-bike">Cliente há 3 anos</div>
+          </article>
+          <article class="testi-card reveal">
+            <div class="testi-stars" aria-label="5 estrelas">
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+            </div>
+            <p class="testi-quote">"Sou cliente há mais de 10 anos e sem sombra de dúvidas é o melhor serviço de manutenção de bike. Trabalho artesanal e dedicado. Nada de produção em série. Se você quer um serviço bem feito e exclusivo, a Bike Force é a melhor."</p>
+            <div class="testi-author">Felipe Borges</div>
+            <div class="testi-bike">Cliente há +10 anos</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHIPPING -->
+    <section id="shipping" aria-labelledby="shipping-heading">
+      <div class="shipping-inner reveal">
+        <h2 class="shipping-title" id="shipping-heading">
+          ENTREGAMOS PARA<br><span class="text--yellow">TODO O BRASIL</span>
+        </h2>
+        <p class="shipping-sub">Fale com nosso vendedor, receba em casa. Bikes, framesets, rodas e componentes premium com segurança e rastreamento.</p>
+        <div class="shipping-icons">
+          <div class="ship-item">
+            <div class="ship-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <div class="ship-label">Embalagem segura</div>
+          </div>
+          <div class="ship-item">
+            <div class="ship-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13" rx="1"/>
+                <path d="M16 8h4l3 5v3h-7V8z"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <div class="ship-label">Frete rastreado</div>
+          </div>
+          <div class="ship-item">
+            <div class="ship-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <div class="ship-label">Garantia de origem</div>
+          </div>
+        </div>
+        <a href="https://wa.me/554830288810" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <span>Compre no WhatsApp</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section id="cta-final" aria-label="Call to action final">
+      <div class="cta-bg-glow"  aria-hidden="true"></div>
+      <div class="cta-line-top" aria-hidden="true"></div>
+      <div class="section-inner">
+        <h2 class="cta-title reveal">
+          PRONTO PARA O<br><span class="headline-accent">PRÓXIMO NÍVEL?</span>
+        </h2>
+        <p class="cta-address reveal">Florianópolis · Rua Tereza Cristina, 67 · Seg–Sex 08h–18h30 · Sáb 08h–12h</p>
+        <div class="cta-btn-wrap reveal">
+          <a href="https://wa.me/554830288810" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <span>Falar com especialista</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">BIKE FORCE · FLORIPA</div>
+        <div class="footer-brand-sub">Oficina Especializada · Desde 2009</div>
+      </div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="https://www.instagram.com/bikeforcefloripa/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/bikeforce.anderson/?locale=pt_BR" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://wa.me/554830288810"                 target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://maps.google.com/?q=Rua+Tereza+Cristina+67+Florianopolis" target="_blank" rel="noopener noreferrer">Rua Tereza Cristina, 67</a>
+      </nav>
+    </div>
+    <div class="footer-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.2903577491215!2d-48.58415602470383!3d-27.584526276253182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952737df0f48d0f5%3A0xa14503c3e917e620!2sBike%20Force!5e0!3m2!1spt-BR!2sbr!4v1779324720929!5m2!1spt-BR!2sbr"
+        title="Bike Force no Google Maps"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="footer-divider">
+      <span>Bike Force Florianópolis · Rua Tereza Cristina, 67, Bairro Canto (Estreito), Florianópolis SC, CEP 88070-790</span>
+      <div class="footer-copy">© 2026 Bike Force · Todos os direitos reservados</div>
+      <div class="footer-auth">Revendedor Autorizado Look · ENVE · OGGI</div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

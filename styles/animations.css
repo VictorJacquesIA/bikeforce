@@ -1,0 +1,40 @@
+/* All @keyframes — defined once, available globally */
+
+@keyframes bikefloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-18px); }
+}
+
+@keyframes fadein {
+  to { opacity: 1; }
+}
+
+@keyframes slideline {
+  0%   { left: -100%; }
+  50%  { left: 100%; }
+  100% { left: 100%; }
+}
+
+@keyframes ticker {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1);   opacity: 0.8; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* Spec-tag individual floats — offset from bike */
+@keyframes tagFloat1 {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-7px); }
+}
+@keyframes tagFloat2 {
+  0%, 100% { transform: translateY(-4px); }
+  50%       { transform: translateY(5px); }
+}
+@keyframes tagFloat3 {
+  0%, 100% { transform: translateY(-2px); }
+  50%       { transform: translateY(8px); }
+}

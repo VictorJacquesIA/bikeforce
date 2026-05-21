@@ -1,0 +1,259 @@
+/* ── Tablet ── */
+@media (max-width: 1024px) {
+  .brands-grid,
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testi-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ── Mobile (main breakpoint) ── */
+@media (max-width: 860px) {
+  #main-nav {
+    width: calc(100% - 2rem);
+    padding: 0.75rem 1.25rem;
+    top: 0.75rem;
+  }
+  #main-nav.scrolled {
+    padding: 0.6rem 1.25rem;
+    top: 0.4rem;
+  }
+  .nav-links { display: none; }
+
+  #hero {
+    padding-top: 7rem;
+    padding-bottom: 0.5rem;
+    justify-content: flex-start;
+    gap: 0;
+    min-height: unset;
+  }
+
+  /* Title above bike in normal flow */
+  .hero-bg-headline {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    font-size: clamp(3rem, 13vw, 5.5rem);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    white-space: normal;
+  }
+
+  .hero-title-front {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    font-size: clamp(3rem, 13vw, 5.5rem);
+    text-align: center;
+    white-space: normal;
+    margin-top: -0.5rem;
+    z-index: 4;
+  }
+
+  .hero-eyebrow { margin-bottom: 0.75rem; }
+
+  /* Bike smaller so buttons stay in viewport */
+  .hero-bike-center {
+    width: 85%;
+    max-width: 100%;
+    margin-top: 3rem;
+    margin-bottom: -0.5rem;
+  }
+
+  /* Spec tags visible on mobile — repositioned */
+  .spec-tag {
+    display: inline-flex;
+    font-size: 0.52rem;
+    padding: 0.28rem 0.55rem;
+    letter-spacing: 0.09em;
+  }
+  .tag-1 { top: 10%;    right: 0%;  }
+  .tag-2 { top: 46%;    left: -1%;  right: auto; } /* swap to left */
+  .tag-3 { bottom: 10%; right: 0%;  }
+
+  .hero-bottom      { padding: 0 1.2rem; gap: 1rem; margin-top: 0.5rem; }
+  .hero-stats       { flex-wrap: wrap; gap: 1.5rem; }
+  .scroll-indicator { display: none; }
+
+  .section-inner { padding: 4.5rem 1.5rem; }
+
+  .brands-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    background: none;
+  }
+
+  .brand-card    { border: 1px solid var(--sep); }
+  .services-grid { grid-template-columns: 1fr; }
+  .products-grid { grid-template-columns: 1fr; }
+  .testi-grid    { grid-template-columns: 1fr; }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    background: none;
+  }
+
+  .about-left {
+    padding: 0;
+    background: none;
+  }
+
+  .about-right {
+    padding: 2.5rem 0;
+    background: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .manifesto-text { font-size: clamp(2rem, 8vw, 3.5rem); }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-right { text-align: center; }
+
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .shipping-icons { gap: 2rem; }
+
+  .carousel { height: 520px; }
+
+  /* ── Centralizar títulos ── */
+  .section-label,
+  .section-title,
+  .title-outline,
+  .headline-accent,
+  .headline-outline,
+  .headline-outline-yellow {
+    text-align: center;
+  }
+
+  /* ── Centralizar cards ── */
+  .service-card,
+  .brand-card,
+  .product-card,
+  .testi-card {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-num,
+  .brand-name,
+  .brand-tagline,
+  .brand-badge,
+  .service-name,
+  .service-desc,
+  .product-name,
+  .product-desc,
+  .testi-text,
+  .testi-author {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* ── Centralizar ícones / shipping ── */
+  .shipping-icon-wrap {
+    align-items: center;
+    text-align: center;
+  }
+
+  .shipping-icons > * {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ── Services ── */
+  .services-header { text-align: center; }
+  .services-title  { text-align: center; }
+
+  /* ── About ── */
+  .about-left {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-text { text-align: center; }
+
+  .about-stat {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-stat-num,
+  .about-stat-label { text-align: center; }
+
+  /* ── Testimonials ── */
+  .testi-header {
+    text-align: center;
+  }
+
+  .testi-title { text-align: center; }
+
+  .testi-card {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testi-stars,
+  .testi-quote,
+  .testi-author,
+  .testi-bike { text-align: center; }
+}
+
+/* ── Small mobile ── */
+@media (max-width: 520px) {
+  .services-grid { grid-template-columns: 1fr; }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cta-title { font-size: clamp(2.5rem, 10vw, 4rem); }
+}
+
+/* ── Touch devices: disable custom cursor ── */
+@media (hover: none) {
+  #cursor-dot,
+  #cursor-ring { display: none; }
+
+  body { cursor: auto; }
+
+  a,
+  button,
+  .nav-cta,
+  .btn-primary,
+  .btn-secondary,
+  .btn-cta-main {
+    cursor: pointer;
+  }
+}

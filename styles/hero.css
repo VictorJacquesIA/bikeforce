@@ -1,0 +1,327 @@
+/* ── Hero layout — layered centered ── */
+#hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+  gap: 0;
+}
+
+/* Decorative backgrounds */
+.hero-bg-lines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -52deg,
+    rgba(255, 209, 0, 0.016) 0px,
+    rgba(255, 209, 0, 0.016) 1px,
+    transparent 1px,
+    transparent 60px
+  );
+  pointer-events: none;
+}
+
+.hero-bg-glow {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; height: 70%;
+  background: radial-gradient(ellipse at center, rgba(255, 209, 0, 0.07) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.hero-grain {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+/* ── Background headline — z-index 1, behind bike ── */
+.hero-bg-headline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -160%);
+  font-family: var(--font-display);
+  font-size: clamp(5.5rem, 16vw, 21rem);
+  line-height: 0.87;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--text);
+  -webkit-text-stroke: 0;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 1.4s ease 0.3s;
+}
+
+.hero-bg-headline.visible {
+  opacity: 1;
+}
+
+/* ── Linha amarela — na frente da bike ── */
+.hero-title-front {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  font-family: var(--font-display);
+  font-size: clamp(5.5rem, 16vw, 21rem);
+  line-height: 0.87;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--yellow);
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 1.4s ease 0.45s;
+}
+
+.hero-title-front.visible {
+  opacity: 1;
+}
+
+.hero-bg-line {
+  display: block;
+}
+
+.hero-bg-line--yellow {
+  color: var(--yellow);
+  -webkit-text-stroke: 0;
+}
+
+/* ── Eyebrow — z-index 4, top center ── */
+.hero-eyebrow {
+  position: relative;
+  z-index: 4;
+  font-family: var(--font-cond);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease 0.2s, transform 0.7s ease 0.2s;
+}
+
+.hero-eyebrow.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Bike centered container — z-index 3, in front of text ── */
+.hero-bike-center {
+  position: relative;
+  z-index: 3;
+  width: 72%;
+  max-width: 860px;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: scale(0.96);
+  transition: opacity 1s ease 0.45s, transform 1s cubic-bezier(0.16, 1, 0.3, 1) 0.45s;
+}
+
+.hero-bike-center.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.bike-wrap {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.1s linear;
+  animation: bikefloat 7s ease-in-out infinite;
+}
+
+.bike-wrap:hover {
+  animation-play-state: paused;
+}
+
+.bike-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.bike-glow {
+  position: absolute;
+  bottom: -5%;
+  left: 10%; right: 10%;
+  height: 140px;
+  background: radial-gradient(ellipse, rgba(255, 209, 0, 0.22) 0%, transparent 70%);
+  filter: blur(22px);
+  z-index: 1;
+}
+
+/* ── Spec tags ── */
+.spec-tag {
+  position: absolute;
+  background: rgba(17, 17, 17, 0.85);
+  border: 1px solid rgba(255, 209, 0, 0.2);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  padding: 0.45rem 0.9rem;
+  font-family: var(--font-cond);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text);
+  z-index: 5;
+  white-space: nowrap;
+}
+
+.spec-tag::before {
+  content: '';
+  display: inline-block;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--yellow);
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.tag-1 {
+  top: 30%; right: 8%;
+  animation: tagFloat1 5s ease-in-out 0.4s infinite;
+}
+.tag-2 {
+  top: 50%; right: -6%;
+  animation: tagFloat2 6.5s ease-in-out 1.2s infinite;
+}
+.tag-3 {
+  bottom: 42%; right: 12%;
+  animation: tagFloat3 4.8s ease-in-out 2s infinite;
+}
+
+/* ── Bottom content block — z-index 4 ── */
+.hero-bottom {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  width: 100%;
+  padding: 0 var(--space-lg);
+  margin-top: -0.5rem;
+}
+
+.hero-badges {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease 0.72s, transform 0.7s ease 0.72s;
+}
+
+.hero-badges.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease 0.84s, transform 0.7s ease 0.84s;
+}
+
+.hero-buttons.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Stats ── */
+.hero-stats {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease 1s, transform 0.7s ease 1s;
+}
+
+.hero-stats.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  color: var(--yellow);
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.stat-label {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+/* ── Scroll indicator ── */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  opacity: 0;
+  animation: fadein 1s ease 1.5s forwards;
+  z-index: 5;
+}
+
+.scroll-line {
+  width: 40px;
+  height: 1px;
+  background: var(--yellow);
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-line::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: var(--text);
+  animation: slideline 2s ease infinite;
+}
+
+.scroll-text {
+  font-family: var(--font-cond);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}

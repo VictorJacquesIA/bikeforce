@@ -1,0 +1,22 @@
+:root {
+  --yellow:       #FFD100;
+  --black:        #080808;
+  --card:         #111111;
+  --hover:        #181818;
+  --text:         #EDE8DF;
+  --muted:        #555555;
+  --sep:          #1E1E1E;
+
+  --font-display: 'Bebas Neue', cursive;
+  --font-body:    'Barlow', sans-serif;
+  --font-cond:    'Barlow Condensed', sans-serif;
+
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  3.5rem;
+  --space-xl:  7rem;
+
+  --max-w: 1280px;
+  --nav-h: 70px;
+}

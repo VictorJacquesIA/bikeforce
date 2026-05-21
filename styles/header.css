@@ -88,7 +88,7 @@ header {
 }
 
 .nav-logo-img {
-  height: 36px;
+  height: 41px;
   width: auto;
 }
 
@@ -112,7 +112,12 @@ header {
   color: var(--yellow);
 }
 
-/* ── Hamburger ── */
+/* ── Hamburger — mobile only ── */
+.nav-hamburger {
+  display: none;
+}
+
+@media (max-width: 860px) {
 .nav-hamburger {
   display: flex;
   flex-direction: column;
@@ -143,6 +148,7 @@ header {
 .nav-hamburger.open .ham-line:nth-child(1) { transform: translateY(7px) rotate(45deg); background: var(--yellow); }
 .nav-hamburger.open .ham-line:nth-child(2) { opacity: 0; width: 0; }
 .nav-hamburger.open .ham-line:nth-child(3) { transform: translateY(-7px) rotate(-45deg); background: var(--yellow); }
+} /* end @media 860px hamburger */
 
 /* ── Fullscreen overlay ── */
 .nav-fullscreen {
